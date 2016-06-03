@@ -1,0 +1,17 @@
+<head>
+  <title>ga-embed-meteor</title>
+</head>
+
+<body>
+  <h1>GA Embed API + Meteor</h1>
+</body>
+
+<template name="layout">
+    <section id="admin">
+        <div id="auth-button"></div> <!-- Outlet for the Embed API auth -->
+        {{> viewSelector}}
+    </section>
+    <section id="main">
+        {{> yield}}
+    </section>
+</template>
